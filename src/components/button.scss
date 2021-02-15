@@ -1,0 +1,48 @@
+@charset "UTF-8";
+// 변수 assign $
+$blue : #228be6; 
+
+.Button {
+    // basic
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+
+    background: $blue;
+    color:white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    // custom
+    &.large {
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+    
+    &.medium {
+        height: 2.25rem;
+        font-size: 1rem;
+        
+    }
+
+    &.small {
+        height: 1.75rem;
+        font-size: 0.875rem;
+    }
+    
+    &:hover {
+        background: lighten($blue, 10%);
+    }
+    &:active {
+        background: darken($blue, 10%);
+    }
+
+    & + & {
+        margin-left:1rem;
+    }
+}

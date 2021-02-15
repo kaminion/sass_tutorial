@@ -14,7 +14,7 @@ const postcssLoader =
 
 module.exports = 
 {
-    entry:'./index.jsx',
+    entry:'./index.js',
     output:{
         path:path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
@@ -28,7 +28,7 @@ module.exports =
                     {
                         loader:'css-loader',
                         options:{
-                            modules:true
+                            modules:false // false로 조정하면 클래스 이름으로 hash값 안씀
                         }
                     },
                     postcssLoader,

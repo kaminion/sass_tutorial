@@ -2,7 +2,7 @@
   "name": "sass_tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.jsx",
   "scripts": {
     "start": "SET NODE_ENV=DEVELOPMENT& webpack serve --config webpack.dev.js",
     "build": "SET NODE_ENV=PRODUCTION& webpack --config webpack.prod.js"
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

@@ -12,6 +12,9 @@
 - webpack-cli
 - webpack-dev-server
 - webpack-merge
+- 스타일 관련
+- classnames
+
 
 - 웹팩 플러그인 및 로더
 - css 관련
@@ -24,6 +27,7 @@
 - mini-css-extract-plugin (css code spliting, **chunk정보 확인 필요**)
 - autoprefixer ( 자동으로 css prefix 붙여줌, browserlist 설정필요)
 - html-webpack-plugin (html 최적화 시 필요)
+
 
 - 바벨
 - babel-loader
