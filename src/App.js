@@ -11,12 +11,12 @@ export default ()=>
             <Button size="small" color="gray">버튼</Button>
         </div>
         <div className="buttons">
-            <Button size="large" color="pink">버튼</Button>
+            <Button size="large" color="pink" className="customized-button">버튼</Button>
             <Button>버튼</Button>
             <Button size="small" color="gray">버튼</Button>
         </div>
         <div className="buttons">
-            <Button size="large" color="pink">버튼</Button>
+            <Button size="large" color="pink" onClick={()=>console.log('클릭!')} onMouseMove={()=>console.log('무브')}>버튼</Button>
             <Button>버튼</Button>
             <Button size="small" color="gray">버튼</Button>
         </div>
