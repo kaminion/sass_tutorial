@@ -13,6 +13,16 @@ $pink : #f06595;
     &:active {
         background: darken($color, 10%);
     }
+
+    &.outline {
+        color: $color;
+        background: none;
+        border: 1px solid $color;
+        &:hover{
+            background: $color;
+            color: white;
+        }
+    }
 }
 
 .Button {
@@ -55,16 +65,22 @@ $pink : #f06595;
         @include button-color($gray)
         
     }
+    
     &.pink {
         @include button-color($pink)
     }
 
 
 
-
-
-
     & + & {
         margin-left:1rem;
+    }
+    &.fullWidth {
+        width: 100%;
+        justify-content: center; // flex 쓸때만 사용가능한 property
+        & + & {
+            margin-left: 0;
+            margin-top: 1rem;
+        }
     }
 }
