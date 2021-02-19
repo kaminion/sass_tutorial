@@ -3,17 +3,19 @@ import classNames from 'classnames';
 import './button.scss';
 
 // large medium small
-function Button({ children, size })
+// color : blue, pink, gray
+function Button({ children, size, color })
 {
     return (
-        <button className={classNames('Button', size)}>
+        <button className={classNames('Button', size, color)}>
         {children}
     </button>)
 }
 
 Button.defaultProps = 
 {
-    size: "medium"
+    size: "medium",
+    color: "blue"
 }
 
 export default Button;
