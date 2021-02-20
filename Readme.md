@@ -3,6 +3,30 @@
 - 직접 webpack 환경 구성 후 설정하였음.
 - 환경자체는 react boilerplate와 유사
 
+# Naming Convention
+- 컴포넌트의 이름을 고유하게 지정
+- 최상위 엘리먼트의 클래스 이름을 컴포넌트 이름과 똑같이
+- 내부에서 셀렉터 사용
+~~~js
+    .UserProfile{
+        .user{
+            .img{
+            }
+            .username{
+
+            }
+        }
+        .about{
+
+        }
+    }
+~~~
+
+# css module
+- 레거시 프로젝트에 리액트 도입 시 유용
+- css 클래스 네이밍 규칙을 만들기 귀찮을 때
+
+
 # dependency
 - 리액트 관련
 - react
